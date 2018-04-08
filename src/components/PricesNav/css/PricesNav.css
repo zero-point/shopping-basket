@@ -1,0 +1,48 @@
+.Menu{
+    border: solid 1px rgb(176, 182, 176);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: rgb(180, 190, 180);
+    
+}
+ 
+.Menu a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.1em;
+    background: rgb(221, 224, 221);
+    border-radius: 5px;
+    padding: 8px
+}
+
+.Menu a:hover{
+    background: rgb(199, 202, 199);
+ 
+}
+ 
+@media screen and (min-width: 499px){
+  
+    .Menu a{
+        font-size: 1.4em;
+    }
+  
+    .Menu{
+        width:80%;
+        margin:auto;
+        padding: 10px
+    }
+}
+
+@media screen and (min-width: 949px){
+     .Menu a{
+        font-size: 1.5em;
+    }
+  
+    .Menu{
+        width:45%;
+        margin:auto;
+    }
+}

@@ -1,0 +1,64 @@
+.nav{
+    border: solid 1px rgb(207, 203, 187);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background: rgb(227, 230, 198);
+}
+ 
+.Menu {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    font-size: 1.5em;
+    background: rgb(239, 241, 221);
+    border-radius: 10px;
+    width:40%;
+    margin:auto;
+    padding: 8px
+}
+
+
+.nav a{
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    font-size: 1.1em;
+    background: rgb(239, 241, 221);
+    border-radius: 10px;
+    width:40%;
+    margin:auto;
+    padding: 8px
+}
+
+.nav a:hover{
+    background: rgb(218, 221, 187);
+
+}
+
+ 
+@media screen and (min-width: 499px){
+  
+    .nav a{
+        font-size: 1.4em;
+    }
+  
+    .nav{
+        width:80%;
+        margin:auto;
+        padding: 10px
+    }
+}
+
+@media screen and (min-width: 949px){
+     .nav a{
+        font-size: 1.5em;
+    }
+  
+    .nav{
+        width:45%;
+        margin:auto;
+    }
+}
