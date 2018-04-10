@@ -3,17 +3,8 @@ const PricesList=(state=ProductList,action)=>{
   
     switch(action.type){
 
-         case 'updateCurency':    
-            let updateSinglePrice=(x)=>{
-                let newPrice=(x.price/state.extchangeRate)*action.newCurrency.value;
-                newPrice=newPrice.toFixed(2);
-                return {product:x.product,price:newPrice}
-            }
-            
-            return {...state,...{products:state.products.map((x)=>{
-            return updateSinglePrice(x);
-            }),shoppingCart:state.shoppingCart}};
-
+         case 'resetStore':
+         return {...state,...{shoppingCart:[],currency:state.currency,extchangeRate:state.extchangeRate,products:state.products}}
          
         default:
         return state;

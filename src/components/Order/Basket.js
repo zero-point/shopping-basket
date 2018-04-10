@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import "../Order/css/basket.css";
-import ApiClient from "../../Api/ApiClient";
-import Action from "../../redux/actions/Action";
 import { Link } from "react-router-dom";
 
 class Basket extends Component {
@@ -22,7 +20,6 @@ class Basket extends Component {
   };
 
   updateitem = e => {
-    let itemFilter = [];
     let eprice = 0;
     var prod = this.props.products;
     for (var i = 0; i < prod.length; i++)
@@ -142,7 +139,7 @@ class Basket extends Component {
             <p>Total: £0.00</p>
           )}
 
-          <Link to="/basket">
+          <Link to="/">
             <button
               onClick={() => {
                 this.emptyCart();
